@@ -191,9 +191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2294c8265d14f4bc186b89a51fd7faf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WalkSpeed: 5
-  RunSpeed: 10
-  CrouchSpeed: 3
+  WalkSpeed: 250
+  RunSpeed: 500
+  CrouchSpeed: 100
 --- !u!95 &1291908876522463432
 Animator:
   serializedVersion: 3

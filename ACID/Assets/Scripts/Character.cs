@@ -51,11 +51,11 @@ public class Character : MonoBehaviour
         }
         Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveVector = _cam.TransformDirection(moveVector);
-        _cont.SimpleMove(moveVector * Speed);
+        _cont.SimpleMove(moveVector * Speed * Time.deltaTime);
 
     }
     //bool Grounded()
     //{
-    //    return Physics.Raycast(transform.position, Vector3.down, GroundDist, Ground);
+    //   return Physics.Raycast(transform.position, Vector3.down, GroundDist, Ground);
     //}
 }
