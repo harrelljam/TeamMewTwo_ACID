@@ -14,7 +14,6 @@ public class AutoDoor : MonoBehaviour
         if(HasAudioSource)
             _aud = GetComponent<AudioSource>();
     }
-
     private void OnTriggerEnter(Collider c)
     {
         if (c.gameObject.CompareTag("Player"))
