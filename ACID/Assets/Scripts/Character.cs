@@ -15,6 +15,7 @@ public class Character : MonoBehaviour
     public float WalkSpeed;
     public float RunSpeed;
     public float CrouchSpeed;
+    public PauseMenu pauseMenu;
 
     public bool FootstepsOn;
     public AudioClip[] StepSounds;
@@ -62,7 +63,13 @@ public class Character : MonoBehaviour
             _stepping = true;
             StartCoroutine(Steps(0.5f));
         }
-        
+
+        //check that the game isn't paused
+        if (pauseMenu.paused)
+        {
+            Speed = 0f;
+        }
+
         Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveVector = _cam.TransformDirection(moveVector);
         _cont.SimpleMove(moveVector * Speed * Time.deltaTime);
