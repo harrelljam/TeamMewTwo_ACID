@@ -1,34 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Character : MonoBehaviour
 {
+    //Static Instance, to access script from other scripts use "Character.I.<public variable/method>"
     public static Character I;  
+    
     public float WalkSpeed;
     public float RunSpeed;
     public float CrouchSpeed;
-    public PauseMenu pauseMenu;
-
-    public bool FootstepsOn;
-    public AudioClip[] StepSounds;
-
     public bool hasKey = false;
+    public bool FootstepsOn;
+    public PauseMenu pauseMenu;
     public GameObject messageCanvas;
     public TextMeshProUGUI messageText;
+    public AudioClip[] StepSounds;
+
     private Coroutine messageCoroutine;
-    
     private CharacterController _cont;
     private Rigidbody _rb;
     private Animator _anim;
     private AudioSource _aud;
     private Transform _cam;
     private bool _stepping = false;
-    
-    //public float JumpForce;
-    //public LayerMask Ground;
-    //public float GroundDist;
 
     void Awake()
     {
@@ -45,8 +43,10 @@ public class Character : MonoBehaviour
     void Update()
     {
         Move();
-        //Jump();
     }
+    /// <summary>
+    /// User input for movement, as well as step sounds.
+    /// </summary>
     private void Move()
     {
         float Speed;
@@ -69,6 +69,7 @@ public class Character : MonoBehaviour
             _anim.SetBool("Crouch", false);
         }
 
+        //Step sounds
         if (FootstepsOn && !_stepping && (Input.GetAxis("Horizontal") >= 0.1f || Input.GetAxis("Vertical") >= 0.1f))
         {
             _stepping = true;
@@ -86,6 +87,11 @@ public class Character : MonoBehaviour
         _cont.SimpleMove(moveVector * Speed * Time.deltaTime);
 
     }
+    /// <summary>
+    /// Enumerator for playing step sounds while walking/running/crouching
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     private IEnumerator Steps(float s)
     {
         _aud.clip = StepSounds[Random.Range(0, StepSounds.Length - 1)];
@@ -95,19 +101,31 @@ public class Character : MonoBehaviour
 
     }
 
-    public void DisplayMessage()
+    /// <summary>
+    /// Displays the canvas, the messageText will become message.
+    /// </summary>
+    public void DisplayMessage(String message)
     {
+        messageText.text = message;
         if(messageCoroutine != null)
             StopCoroutine(messageCoroutine);
         messageCoroutine = StartCoroutine(Message(3f));
     }
 
+    /// <summary>
+    /// interrupts the 3 second message display
+    /// </summary>
     public void DestroyMessage()
     {
         if(messageCoroutine != null)
             StopCoroutine(messageCoroutine);
         messageCanvas.SetActive(false);
     }
+    /// <summary>
+    /// sets message canvas to true for 3 seconds
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
     private IEnumerator Message(float s)
     {
         messageCanvas.SetActive(true);

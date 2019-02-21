@@ -20,11 +20,10 @@ public class Interact : MonoBehaviour
     {
         if (FindItem())
         {
-            MonoBehaviour targetMono;
+            //Looking at a key - display message, allow input.
             if (_target.tag.Equals("Key"))
             {
-                _char.DisplayMessage();
-                _char.messageText.text = "Press E to get keycard";
+                _char.DisplayMessage("Press E to get keycard");
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     _char.hasKey = true;
@@ -35,6 +34,11 @@ public class Interact : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Casts a ray in the forward direction of Canvas searching for object in the _layer Layer.
+    /// If found, sets the _target to the object found and returns true.
+    /// </summary>
+    /// <returns></returns>
     private bool FindItem()
     {
         if (Physics.Raycast(origin.position, origin.forward, out var hit, sightDistance, _layer))

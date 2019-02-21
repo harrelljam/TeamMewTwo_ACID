@@ -21,6 +21,7 @@ public class AutoDoor : MonoBehaviour
 
     void Update()
     {
+        //if character nearby and door is locked, E will open door and remove message
         if (characterNearby)
         {
             if(Input.GetKeyDown(KeyCode.E) && isLocked && _char.hasKey)
@@ -33,6 +34,12 @@ public class AutoDoor : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Triggers the door to open upon the character entering the sphere collider.
+    /// If the isLocked bool is true, Characters hasKey bool must be true to
+    /// prompt E to open message.
+    /// </summary>
+    /// <param name="c"></param>
     private void OnTriggerEnter(Collider c)
     {
         if (c.gameObject.CompareTag("Player") && isLocked)
@@ -40,13 +47,11 @@ public class AutoDoor : MonoBehaviour
             characterNearby = true;
             if (_char.hasKey)
             {
-                _char.DisplayMessage();
-                _char.messageText.text = "Press E to unlock door";
+                _char.DisplayMessage("Press E to unlock door");
             }
             else
             {
-                _char.DisplayMessage();
-                _char.messageText.text = "you need a key";
+                _char.DisplayMessage("you need a key");
             }
         }
 
@@ -57,6 +62,10 @@ public class AutoDoor : MonoBehaviour
             _anim.SetBool("character_nearby", true);
         }
     }
+    /// <summary>
+    /// Triggers the door to close upon character exiting sphere collider
+    /// </summary>
+    /// <param name="c"></param>
     private void OnTriggerExit(Collider c)
     {
         if (c.gameObject.CompareTag("Player"))
