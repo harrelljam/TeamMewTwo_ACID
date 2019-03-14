@@ -14655,10 +14655,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3576136079576160287}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -14703,13 +14699,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -14726,10 +14718,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1148177404184940200}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -14781,6 +14769,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -14880,10 +14872,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 643641141071545218}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14928,6 +14916,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &721980434108859782 stripped
@@ -14943,10 +14935,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2113297307880004513}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -14991,13 +14979,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -15014,10 +14998,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2581312078920386658}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -15069,6 +15049,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -15328,10 +15312,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3160924915386215871}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -15376,13 +15356,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -15399,10 +15375,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5645067023508681995}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -15447,13 +15419,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -15636,10 +15604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2113297307880004513}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -15691,6 +15655,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -15707,10 +15675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6974731554516674362}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -15763,6 +15727,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &2566516916153584993 stripped
@@ -15778,10 +15746,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5075999914824819439}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -15826,13 +15790,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -15849,10 +15809,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7077268593916498953}
     m_Modifications:
-    - target: {fileID: 120334, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
-      propertyPath: m_Name
-      value: decorative_sofa
-      objectReference: {fileID: 0}
     - target: {fileID: 422434, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.89
@@ -15896,6 +15852,10 @@ PrefabInstance:
     - target: {fileID: 422434, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120334, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
+      propertyPath: m_Name
+      value: decorative_sofa
       objectReference: {fileID: 0}
     - target: {fileID: 20523856, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
@@ -16015,10 +15975,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3160924915386215871}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16063,6 +16019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &3307114371345391682 stripped
@@ -16078,10 +16038,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5645067023508681995}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -16134,6 +16090,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &3324717898441678072 stripped
@@ -16149,10 +16109,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6974731554516674362}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -16204,6 +16160,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -16220,10 +16180,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 643641141071545218}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -16275,6 +16231,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -16291,10 +16251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3576136079576160287}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -16346,6 +16302,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -16362,10 +16322,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5645067023508681995}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -16417,6 +16373,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -16516,10 +16476,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2581312078920386658}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16564,6 +16520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &3783943893488746970 stripped
@@ -16579,10 +16539,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1360807594385083237}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -16634,6 +16590,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -16713,10 +16673,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5075999914824819439}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -16769,6 +16725,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &3914187725147491314 stripped
@@ -16784,10 +16744,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7077268593916498953}
     m_Modifications:
-    - target: {fileID: 127298, guid: 04ced07fc5a1dbb45906c40768747c8a, type: 3}
-      propertyPath: m_Name
-      value: cabinet_L
-      objectReference: {fileID: 0}
     - target: {fileID: 436802, guid: 04ced07fc5a1dbb45906c40768747c8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -16832,6 +16788,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 127298, guid: 04ced07fc5a1dbb45906c40768747c8a, type: 3}
+      propertyPath: m_Name
+      value: cabinet_L
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ced07fc5a1dbb45906c40768747c8a, type: 3}
 --- !u!4 &3959664230905925115 stripped
@@ -16847,10 +16807,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1360807594385083237}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16894,6 +16850,10 @@ PrefabInstance:
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -16973,10 +16933,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6974731554516674362}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17020,6 +16976,10 @@ PrefabInstance:
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -17036,10 +16996,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 643641141071545218}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -17091,6 +17047,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -17107,10 +17067,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5075999914824819439}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -17162,6 +17118,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -17178,10 +17138,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6974731554516674362}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -17226,13 +17182,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -17249,10 +17201,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5645067023508681995}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17296,6 +17244,10 @@ PrefabInstance:
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -17312,10 +17264,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1148177404184940200}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17360,6 +17308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &5717481479591151300 stripped
@@ -17375,10 +17327,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3160924915386215871}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -17431,6 +17379,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &5759804623303068436 stripped
@@ -17446,10 +17398,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2581312078920386658}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -17494,13 +17442,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -17517,10 +17461,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1148177404184940200}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -17565,13 +17505,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -17588,10 +17524,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3160924915386215871}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -17643,6 +17575,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -17659,10 +17595,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2113297307880004513}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -17714,6 +17646,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -17813,10 +17749,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7077268593916498953}
     m_Modifications:
-    - target: {fileID: 120334, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
-      propertyPath: m_Name
-      value: decorative_sofa (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 422434, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.1401
@@ -17860,6 +17792,10 @@ PrefabInstance:
     - target: {fileID: 422434, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120334, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
+      propertyPath: m_Name
+      value: decorative_sofa (1)
       objectReference: {fileID: 0}
     - target: {fileID: 20523856, guid: e4362215d2f4b974a9729be40db2af84, type: 3}
       propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
@@ -18042,10 +17978,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2113297307880004513}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18089,6 +18021,10 @@ PrefabInstance:
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -18105,10 +18041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3576136079576160287}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18153,6 +18085,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &7275554715178318359 stripped
@@ -18168,10 +18104,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3576136079576160287}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.74799937
@@ -18224,6 +18156,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &7452286467542198436 stripped
@@ -18239,10 +18175,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2581312078920386658}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -18294,6 +18226,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
@@ -18393,10 +18329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5075999914824819439}
     m_Modifications:
-    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
-      propertyPath: m_Name
-      value: desk
-      objectReference: {fileID: 0}
     - target: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18441,6 +18373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153876, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
+      propertyPath: m_Name
+      value: desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
 --- !u!4 &7905016827492414369 stripped
@@ -18456,10 +18392,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1360807594385083237}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -18504,13 +18436,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -18527,10 +18455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1148177404184940200}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -18583,6 +18507,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}
 --- !u!4 &8253398036303704651 stripped
@@ -18598,10 +18526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 643641141071545218}
     m_Modifications:
-    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_Name
-      value: desk_no_computer
-      objectReference: {fileID: 0}
     - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7229996
@@ -18646,13 +18570,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 468542, guid: 861fea087c7148246939515a3d957d2e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+    - target: {fileID: 118386, guid: 861fea087c7148246939515a3d957d2e, type: 3}
+      propertyPath: m_Name
+      value: desk_no_computer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861fea087c7148246939515a3d957d2e, type: 3}
@@ -18669,10 +18589,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7077268593916498953}
     m_Modifications:
-    - target: {fileID: 189446, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
-      propertyPath: m_Name
-      value: hydroponic (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 486616, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.37
@@ -18725,6 +18641,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 189446, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
+      propertyPath: m_Name
+      value: hydroponic (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
 --- !u!4 &8590466915256735499 stripped
@@ -18740,10 +18660,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7077268593916498953}
     m_Modifications:
-    - target: {fileID: 189446, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
-      propertyPath: m_Name
-      value: hydroponic
-      objectReference: {fileID: 0}
     - target: {fileID: 486616, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2
@@ -18788,6 +18704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 189446, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
+      propertyPath: m_Name
+      value: hydroponic
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1759eacdee08e12408d757d50755a6d0, type: 3}
 --- !u!4 &9064642639823251374 stripped
@@ -18803,10 +18723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1360807594385083237}
     m_Modifications:
-    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
-      propertyPath: m_Name
-      value: decorative_half_wall_6 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.588
@@ -18858,6 +18774,10 @@ PrefabInstance:
     - target: {fileID: 455794, guid: b2921be07fb71344985447616d3d64d7, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177416, guid: b2921be07fb71344985447616d3d64d7, type: 3}
+      propertyPath: m_Name
+      value: decorative_half_wall_6 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2921be07fb71344985447616d3d64d7, type: 3}

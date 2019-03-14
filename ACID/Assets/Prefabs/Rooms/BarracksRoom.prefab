@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6215025912167414046}
   m_Layer: 0
-  m_Name: SimpleRoom
+  m_Name: BarracksRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,9 +354,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.4245283, g: 0.06608224, b: 0.06608224, a: 1}
-  m_Intensity: 1.06
-  m_Range: 13.613318
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.2
+  m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 6392289230953048240}
   - component: {fileID: 6392289230953048241}
   - component: {fileID: 1393416098399495204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,6 +1180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasAudioSource: 1
+  isLocked: 1
+  characterNearby: 0
 --- !u!82 &1393416098399495204
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1591,8 +1593,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.06
-  m_Range: 13.613318
+  m_Intensity: 1.2
+  m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2657,8 +2659,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.06
-  m_Range: 13.613318
+  m_Intensity: 1.2
+  m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
