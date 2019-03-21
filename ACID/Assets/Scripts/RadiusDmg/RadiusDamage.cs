@@ -5,33 +5,33 @@ using UnityEngine;
 public class RadiusDamage : MonoBehaviour
 {
 	public GameObject player;
+	public float damagePerSecond;
 	private bool inside;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.inside = false;
+        inside = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(this.inside){
-        	Debug.Log("ahhh I'm burning");
-        }*/
+        if(inside){
+        	//deal damage per second to the player
+        	
+        }
     }
     
-    private void onTriggerEnter(Collider obj){
+    private void OnTriggerEnter(Collider obj){
     	if(obj.gameObject.CompareTag("Player")){
-    		this.inside = true;
-    		Debug.Log("I'm burning");
+    		inside = true;
     	}
     }
     
-    private void onTriggerExit(Collider obj){
+    private void OnTriggerExit(Collider obj){
     	if(obj.gameObject.CompareTag("Player")){
-    		this.inside = false;
-    		Debug.Log("Left");
+    		inside = false;
     	}
     }
 }
