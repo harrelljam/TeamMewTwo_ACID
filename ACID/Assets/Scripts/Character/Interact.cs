@@ -20,7 +20,6 @@ public class Interact : MonoBehaviour
     {
         if (FindItem())
         {
-            //Looking at a key - display message, allow input.
             if (_target.tag.Equals("Key"))
             {
                 _char.DisplayMessage("Press E to get keycard");
@@ -28,8 +27,18 @@ public class Interact : MonoBehaviour
                 {
                     _char.hasKey = true;
                     Destroy(_target);
-                    _char.DestroyMessage();
                 }
+            }
+            else if (_target.tag.Equals("Terminal"))
+            {
+            	_char.DisplayMessage("Press E to access terminal");
+            	if (Input.GetKeyDown(KeyCode.E))
+            	{
+            		Debug.Log("Using a terminal");
+            	}
+            } else
+            {
+            	_char.DestroyMessage();
             }
         }
     }
