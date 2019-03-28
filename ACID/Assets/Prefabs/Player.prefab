@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 1609569392723851613}
   - component: {fileID: 3764076856401210203}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1609569392723851613
 Transform:
   m_ObjectHideFlags: 0
@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 1291908876522463429}
   - component: {fileID: 1291908876522463430}
   - component: {fileID: 1891699982223176615}
+  - component: {fileID: 3994569390001396576}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,8 +268,11 @@ MonoBehaviour:
   WalkSpeed: 100
   RunSpeed: 250
   CrouchSpeed: 50
-  pauseMenu: {fileID: 1891699981591419950}
+  hasKey: 0
   FootstepsOn: 0
+  pauseMenu: {fileID: 1891699981591419950}
+  messageCanvas: {fileID: 0}
+  messageText: {fileID: 0}
   StepSounds: []
 --- !u!95 &1291908876522463432
 Animator:
@@ -419,6 +423,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3994569390001396576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291908876522463424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707f41616e0fb11edbaa18071c2a30df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlight: {fileID: 1261679866510427934}
 --- !u!1 &1891699980250373583
 GameObject:
   m_ObjectHideFlags: 0
