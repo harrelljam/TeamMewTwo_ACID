@@ -31,6 +31,16 @@ public class Interact : MonoBehaviour
                     _char.DestroyMessage();
                 }
             }
+            
+            //Looking at a terminal
+            if (_target.tag.Equals("Terminal"))
+            {
+            	_char.DisplayMessage("Press E to access terminal");
+            	if (Input.GetKeyDown(KeyCode.E))
+            	{
+            		Debug.Log("Using a terminal");
+            	}
+            }
         }
     }
     
