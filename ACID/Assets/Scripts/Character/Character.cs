@@ -41,7 +41,7 @@ public class Character : MonoBehaviour
         _aud = GetComponent<AudioSource>();
         _cam = GetComponentInChildren<Camera>().transform;
     }
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
