@@ -27,17 +27,12 @@ public class PauseMenu : MonoBehaviour
                 paused = true;
                 Pause();
             }
-            else
-            {
-                paused = false;
-                Unpause();
-            }
         }
     }
 
     public void Unpause()
     {
-        Time.timeScale = 1;
+        Debug.Log("Game Unpaused");
         paused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -46,8 +41,8 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        Time.timeScale = 0;
         paused = true;
+        Debug.Log("Game Paused");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseMenuCanvas.SetActive(true);
