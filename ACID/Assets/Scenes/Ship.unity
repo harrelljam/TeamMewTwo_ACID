@@ -2249,6 +2249,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &726275484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1261679866510427934, guid: 883e8dc65b6651a4fb4cc23d8c85b489,
+    type: 3}
+  m_PrefabInstance: {fileID: 1891699981360488374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &735932642
 GameObject:
   m_ObjectHideFlags: 0
@@ -14819,6 +14825,19 @@ MonoBehaviour:
   _layer:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1291908876522463426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291908876522463424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707f41616e0fb11edbaa18071c2a30df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlight: {fileID: 726275484}
 --- !u!114 &1291908876522463434
 MonoBehaviour:
   m_ObjectHideFlags: 0
