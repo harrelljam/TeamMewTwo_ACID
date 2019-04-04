@@ -55,7 +55,7 @@ public class AutoDoor : MonoBehaviour
             }
         }
 
-        else if ((c.gameObject.CompareTag("Player") || c.gameObject.CompareTag("AI")) && !isLocked)
+        else if (c.gameObject.CompareTag("Player") && !isLocked)
         {
             if(HasAudioSource)
                 _aud.Play();
@@ -68,7 +68,7 @@ public class AutoDoor : MonoBehaviour
     /// <param name="c"></param>
     private void OnTriggerExit(Collider c)
     {
-        if (c.gameObject.CompareTag("Player") || c.gameObject.CompareTag("AI"))
+        if (c.gameObject.CompareTag("Player"))
         {
             characterNearby = false;
             _anim.SetBool("character_nearby", false);
