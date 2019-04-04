@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
     public GameObject messageCanvas;
     public TextMeshProUGUI messageText;
     public AudioClip[] StepSounds;
+    public Transform Camera;
 
     private Coroutine messageCoroutine;
     private CharacterController _cont;
@@ -121,6 +122,20 @@ public class Character : MonoBehaviour
             StopCoroutine(messageCoroutine);
         messageCanvas.SetActive(false);
     }
+
+    /// <summary>
+    /// called when player caught by AI
+    /// </summary>
+    /// <param name="deathSpot"></param>
+    public void Death(Transform deathSpot)
+    {
+        Camera.gameObject.GetComponent<MouseLook>().enabled = false;
+        Camera.parent = deathSpot;
+        Camera.transform.localPosition = new Vector3(0,0,0);
+        Camera.transform.localRotation = new Quaternion(0,0,0,0);
+        StartCoroutine(WaitDie(2f));
+    }
+    
     /// <summary>
     /// sets message canvas to true for 3 seconds
     /// </summary>
@@ -131,6 +146,11 @@ public class Character : MonoBehaviour
         messageCanvas.SetActive(true);
         yield return new WaitForSeconds(s);
         messageCanvas.SetActive(false);
-
+    }
+    
+    private IEnumerator WaitDie(float s)
+    {
+        yield return new WaitForSeconds(s);
+        SceneLoader.I.LoadScene(1);
     }
 }

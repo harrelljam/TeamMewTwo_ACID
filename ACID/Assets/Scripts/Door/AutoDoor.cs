@@ -68,7 +68,7 @@ public class AutoDoor : MonoBehaviour
     /// <param name="c"></param>
     private void OnTriggerExit(Collider c)
     {
-        if (c.gameObject.CompareTag("Player"))
+        if (c.gameObject.CompareTag("Player") || c.gameObject.CompareTag(""))
         {
             characterNearby = false;
             _anim.SetBool("character_nearby", false);

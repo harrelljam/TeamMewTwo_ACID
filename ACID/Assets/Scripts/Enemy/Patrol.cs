@@ -13,6 +13,7 @@ public class Patrol : MonoBehaviour
     public Animator Anim;
     public Transform[] Points;
     public AudioClip[] RobotScreams;
+    public Transform DeathSpot;
     
     private int _destPoint = 0;
     private NavMeshAgent _agent;
@@ -93,9 +94,15 @@ public class Patrol : MonoBehaviour
             _wait = StartCoroutine(WaitHere(PauseTime));
         }
 
-        if (!_agent.pathPending && _agent.remainingDistance < 0.5f && _chasing)
+        if (!_agent.pathPending && _agent.remainingDistance < 0.1f && _chasing)
         {
-            print("you lose");
+            _target.gameObject.GetComponent<Character>().Death(DeathSpot);
+            _agent.isStopped = true;
+            Anim.SetBool("moving", false);
+            Anim.SetBool("chasing", false);
+            Anim.SetTrigger("JumpScare");
+            _source.clip = RobotScreams[Random.Range(0, RobotScreams.Length)];
+            _source.Play();
         }
         else if (_chasing)
         {
