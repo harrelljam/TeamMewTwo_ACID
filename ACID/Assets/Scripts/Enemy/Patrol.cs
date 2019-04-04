@@ -13,9 +13,13 @@ public class Patrol : MonoBehaviour
     public Animator Anim;
     public Transform[] Points;
     public AudioClip[] RobotScreams;
+    
     private int _destPoint = 0;
     private NavMeshAgent _agent;
+    private Coroutine _wait;
+    private Coroutine _hunt;
     private bool _waiting = false;
+    private bool _hunting = false;
     private bool _chasing = false;
     private Transform _target;
     private AudioSource _source;
@@ -51,24 +55,33 @@ public class Patrol : MonoBehaviour
 
     public void ChasePlayer(Transform player)
     {
-        _target = player;
-        _chasing = true;
-        _agent.destination = player.position;
-        _agent.speed = ChaseSpeed;
-        Anim.SetBool("chasing", true);
-        Anim.SetBool("moving", true);
-        _source.clip = RobotScreams[Random.Range(0, RobotScreams.Length)];
-        _source.Play();
+        if (_waiting)
+        {
+            StopCoroutine(_wait);
+            _waiting = false;
+        }
+        if(_hunting)
+        {
+            StopCoroutine(_hunt);
+            _hunting = false;
+        }
+        
+        if (!_chasing)
+        {
+            _chasing = true;
+            _target = player;
+            _agent.speed = ChaseSpeed;
+            _agent.isStopped = false;
+            Anim.SetBool("chasing", true);
+            Anim.SetBool("moving", true);
+            _source.clip = RobotScreams[Random.Range(0, RobotScreams.Length)];
+            _source.Play();
+        }
     }
     public void LosePlayer()
     {
-        _chasing = false;
-        _target = null;
-        _agent.speed = WalkSpeed;
-        Anim.SetBool("chasing", false);
-        Anim.SetBool("moving", false);
-        _agent.isStopped = true;
-        StartCoroutine(WaitHere(PauseTime));
+        _hunting = true;
+        _hunt = StartCoroutine(WaitHunt(3f));
     }
 
     private void Update () {
@@ -77,15 +90,14 @@ public class Patrol : MonoBehaviour
         if (!_agent.pathPending && _agent.remainingDistance < 0.5f && !_waiting && !_chasing)
         {
             _agent.isStopped = true;
-            StartCoroutine(WaitHere(PauseTime));
-            _waiting = true;   
+            _wait = StartCoroutine(WaitHere(PauseTime));
         }
 
         if (!_agent.pathPending && _agent.remainingDistance < 0.5f && _chasing)
         {
             print("you lose");
         }
-        else if (!_agent.pathPending && _agent.remainingDistance < 2f && _chasing)
+        else if (_chasing)
         {
             _agent.destination = _target.position;
         }
@@ -93,6 +105,7 @@ public class Patrol : MonoBehaviour
 
     private IEnumerator WaitHere(float seconds)
     {
+        _waiting = true;
         Anim.SetBool("moving", false);
         yield return new WaitForSeconds(seconds);
         if (!_chasing)
@@ -100,5 +113,17 @@ public class Patrol : MonoBehaviour
             _waiting = false;
             GotoNextPoint();   
         }
+    }
+    private IEnumerator WaitHunt(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        _hunting = false;
+        _chasing = false;
+        _target = null;
+        _agent.speed = WalkSpeed;
+        Anim.SetBool("chasing", false);
+        _agent.isStopped = true;
+        if(!_waiting)
+            _wait = StartCoroutine(WaitHere(PauseTime));
     }
 }

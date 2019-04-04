@@ -8,17 +8,24 @@ public class Sight : MonoBehaviour
     public float SightDist;
     public LayerMask Layer;
 
-    private bool _inSight;
+    private bool _inRange;
+    private bool _spotted;
     private Transform _target;
 
     private void Update()
     {
-        if (_inSight)
+        if (_inRange && !_spotted)
         {
-            var heading = _target.position - transform.position;
-            var distance = heading.magnitude;
-            var direction = heading / distance;
-            if (!Physics.Raycast(transform.position, direction, out var hit, SightDist, Layer))
+            if (SightRay(_target))
+            {
+                _spotted = true;
+                Chase(_target);
+            }
+        }
+
+        if (_spotted)
+        {
+            if (!SightRay(_target))
             {
                 Reset();
             }
@@ -27,30 +34,39 @@ public class Sight : MonoBehaviour
 
     private void Reset()
     {
-        _target = null;
-        _inSight = false;
+        _spotted = false;
         Patrol.LosePlayer();
     }
 
-    private void NewTarget(Transform target)
+    private void Chase(Transform target)
     {
-        _target = target.transform;
-        _inSight = true;
         Patrol.ChasePlayer(_target);
+    }
+
+    private bool SightRay(Transform other)
+    {
+        var from = transform.position;
+        var heading = other.transform.position - from;
+        var distance = heading.magnitude;
+        var direction = heading / distance;
+        var sightRay = new Ray(from, direction);
+        if (Physics.Raycast(sightRay, out var hit, SightDist))
+        {
+            if (hit.transform.tag.Equals("Player"))
+            {
+                return true; 
+            }
+            return false;
+        }
+        return false;
     }
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals("Player"))
         {
-            print(other.name + " entered");
-            var heading = other.transform.position - transform.position;
-            var distance = heading.magnitude;
-            var direction = heading / distance;
-            if (Physics.Raycast(transform.position, direction, out var hit, SightDist, Layer))
-            {
-                NewTarget(other.transform);
-            }
+            _inRange = true;
+            _target = other.transform;
         }
     }
     
@@ -58,10 +74,9 @@ public class Sight : MonoBehaviour
     {
         if (other.tag.Equals("Player"))
         {
-            if (_inSight)
-            {
-                Reset();
-            }
+            _spotted = false;
+            _inRange = false;
+            _target = null;
         }
     }
 }
