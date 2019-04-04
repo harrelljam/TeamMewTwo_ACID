@@ -8,7 +8,7 @@ public class MouseLook : MonoBehaviour
     public float clampAngle = 80.0f;
     public PauseMenu pauseMenu;
 
-    private float rotY = 0.0f; // rotation around the up/y axis
+    private float rotY = 180.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
 
     void Start()
