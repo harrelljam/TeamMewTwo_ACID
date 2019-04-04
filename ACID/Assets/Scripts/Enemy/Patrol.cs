@@ -94,19 +94,24 @@ public class Patrol : MonoBehaviour
             _wait = StartCoroutine(WaitHere(PauseTime));
         }
 
-        if (!_agent.pathPending && _agent.remainingDistance < 0.1f && _chasing)
+        if (_chasing)
         {
-            _target.gameObject.GetComponent<Character>().Death(DeathSpot);
-            _agent.isStopped = true;
-            Anim.SetBool("moving", false);
-            Anim.SetBool("chasing", false);
-            Anim.SetTrigger("JumpScare");
-            _source.clip = RobotScreams[Random.Range(0, RobotScreams.Length)];
-            _source.Play();
-        }
-        else if (_chasing)
-        {
-            _agent.destination = _target.position;
+            float dist = Vector3.Distance(_target.position, transform.position);
+            if (dist < 2f)
+            {
+                _chasing = false;
+                _target.gameObject.GetComponent<Character>().Death(DeathSpot);
+                _agent.isStopped = true;
+                Anim.SetBool("moving", false);
+                Anim.SetBool("chasing", false);
+                Anim.SetTrigger("JumpScare");
+                _source.clip = RobotScreams[Random.Range(0, RobotScreams.Length)];
+                _source.Play();
+            }
+            else
+            {
+                _agent.destination = _target.position;
+            }
         }
     }
 
