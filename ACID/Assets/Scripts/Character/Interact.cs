@@ -32,7 +32,6 @@ public class Interact : MonoBehaviour
                     _char.hasKey = true;
                     _targetSpotted = false;
                     Destroy(_target);
-                    _target = null;
                     _char.DestroyMessage();
                 }
             }
@@ -51,10 +50,10 @@ public class Interact : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E) && _char.hasKey && _targetDoor.isLocked)
                 {
                     _targetDoor.KeyOpen();
-                    _char.hasKey = true;
+                    _char.hasKey = false;
                     _targetSpotted = false;
-                    Destroy(_target);
                     _target = null;
+                    _targetDoor = null;
                     _char.DestroyMessage();
                 }
             }
