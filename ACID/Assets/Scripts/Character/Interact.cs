@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class Interact : MonoBehaviour
     public Transform origin;
     public LayerMask _layer;
     private GameObject _target;
+    private AutoDoor _targetDoor;
+    private bool _targetSpotted;
     private Character _char;
 
     void Start()
@@ -27,10 +30,40 @@ public class Interact : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     _char.hasKey = true;
+                    _targetSpotted = false;
                     Destroy(_target);
+                    _target = null;
                     _char.DestroyMessage();
                 }
             }
+            if (_target.tag.Equals("Door"))
+            {
+                if (_targetDoor == null)
+                {
+                    _targetDoor = _target.GetComponent<AutoDoor>();
+                }
+                
+                if(_char.hasKey && _targetDoor.isLocked)
+                    _char.DisplayMessage("Press E to open door");
+                else if (_targetDoor.isLocked)
+                    _char.DisplayMessage("You need a keycard");
+                
+                if (Input.GetKeyDown(KeyCode.E) && _char.hasKey && _targetDoor.isLocked)
+                {
+                    _targetDoor.KeyOpen();
+                    _char.hasKey = true;
+                    _targetSpotted = false;
+                    Destroy(_target);
+                    _target = null;
+                    _char.DestroyMessage();
+                }
+            }
+        }
+        else if (_targetSpotted)
+        {
+            _target = null;
+            _targetSpotted = false;
+            _char.DestroyMessage();
         }
     }
     
@@ -43,6 +76,7 @@ public class Interact : MonoBehaviour
     {
         if (Physics.Raycast(origin.position, origin.forward, out var hit, sightDistance, _layer))
         {
+            _targetSpotted = true;
             _target = hit.transform.gameObject;
             return true;
         }
