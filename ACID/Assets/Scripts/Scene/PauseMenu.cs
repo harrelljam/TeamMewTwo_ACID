@@ -35,21 +35,33 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Unpause()
-    {
-        Time.timeScale = 1;
-        paused = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        pauseMenuCanvas.SetActive(false);
-    }
-
-    void Pause()
+    //Pause the game but don't display menu
+    public void Freeze()
     {
         Time.timeScale = 0;
         paused = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    //Unpause the game, but don't remove window
+    public void Unfreeze()
+    {
+        Time.timeScale = 1;
+        paused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void Unpause()
+    {
+        Unfreeze();
+        pauseMenuCanvas.SetActive(false);
+    }
+
+    public void Pause()
+    {
+        Freeze();
         pauseMenuCanvas.SetActive(true);
     }
 

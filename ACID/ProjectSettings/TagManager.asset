@@ -11,6 +11,7 @@ TagManager:
   - Light
   - Battery
   - Health
+  - Terminal
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class Interact : MonoBehaviour
     public LayerMask _layer;
     private GameObject _target;
     private AutoDoor _targetDoor;
+    private ScreenGui _targetTerminal;
     private bool _targetSpotted;
     
     private Character _char;
@@ -106,6 +107,23 @@ public class Interact : MonoBehaviour
                     _targetSpotted = false;
                     _target = null;
                     _targetDoor = null;
+                    _char.DestroyMessage();
+                }
+            }
+            if (_target.tag.Equals("Terminal"))
+            {
+                if (_targetTerminal == null)
+                {
+                    _targetTerminal = _char.GetComponentInChildren<ScreenGui>();
+                }
+
+                _char.DisplayMessage("Press E to activate terminal");
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    _targetTerminal.Show();
+                    _target = null;
+                    _targetTerminal = null;
                     _char.DestroyMessage();
                 }
             }
