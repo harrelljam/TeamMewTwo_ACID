@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Terminal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string TerminalTitle;
+    public string InitialOutput;
+    public string RequiredInput;
+    public string ErrorMessage;
+    public string FinalOutput;
 }

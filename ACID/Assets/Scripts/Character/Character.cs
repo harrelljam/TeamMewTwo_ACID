@@ -22,7 +22,7 @@ public class Character : MonoBehaviour
     public AudioClip[] StepSounds;
     public Transform Camera;
     public GameObject Flightlight;
-    
+    public ScreenGui terminalGUI;
     private Coroutine messageCoroutine;
     private CharacterController _cont;
     private Animator _anim;

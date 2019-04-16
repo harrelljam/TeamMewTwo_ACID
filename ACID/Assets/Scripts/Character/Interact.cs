@@ -11,10 +11,12 @@ public class Interact : MonoBehaviour
     public GameObject flashlight;
     public float sightDistance;
     public Transform origin;
-    public LayerMask _layer;
+    public LayerMask Layer;
+    public bool RaycastReady = true;
+    
     private GameObject _target;
     private AutoDoor _targetDoor;
-    private ScreenGui _targetTerminal;
+    private Terminal _targetTerminal;
     private bool _targetSpotted;
     
     private Character _char;
@@ -114,14 +116,14 @@ public class Interact : MonoBehaviour
             {
                 if (_targetTerminal == null)
                 {
-                    _targetTerminal = _char.GetComponentInChildren<ScreenGui>();
+                    _targetTerminal = _target.GetComponent<Terminal>();
                 }
 
                 _char.DisplayMessage("Press E to activate terminal");
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    _targetTerminal.Show();
+                    _char.terminalGUI.OpenTerminal(_targetTerminal);
                     _target = null;
                     _targetTerminal = null;
                     _char.DestroyMessage();
@@ -143,7 +145,7 @@ public class Interact : MonoBehaviour
     /// <returns></returns>
     private bool FindItem()
     {
-        if (Physics.Raycast(origin.position, origin.forward, out var hit, sightDistance, _layer))
+        if (RaycastReady && Physics.Raycast(origin.position, origin.forward, out var hit, sightDistance, Layer))
         {
             _targetSpotted = true;
             _target = hit.transform.gameObject;
