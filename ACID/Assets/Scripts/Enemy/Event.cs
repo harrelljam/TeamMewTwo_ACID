@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class Event : MonoBehaviour
 {
     public GameObject[] EventObjects;
+    public String Message;
 
 
     // Start is called before the first frame update
@@ -17,5 +18,10 @@ public class Event : MonoBehaviour
             obj.SetActive(true);
         }
         GetComponent<Patrol>().enabled = true;
+
+        if (Message != "")
+        {
+            Character.I.DisplayMessageTimed(Message, 3f);
+        }
     }
 }

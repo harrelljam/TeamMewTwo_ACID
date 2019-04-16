@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -20,10 +21,10 @@ public class Character : MonoBehaviour
     public TextMeshProUGUI messageText;
     public AudioClip[] StepSounds;
     public Transform Camera;
-
+    public GameObject Flightlight;
+    
     private Coroutine messageCoroutine;
     private CharacterController _cont;
-    private Rigidbody _rb;
     private Animator _anim;
     private AudioSource _aud;
     private Transform _cam;
@@ -31,15 +32,15 @@ public class Character : MonoBehaviour
 
     void Awake()
     {
-        I = this;
+        I = this;     
     }
     void Start()
     {
         _cont = GetComponent<CharacterController>();
-        _rb = GetComponent<Rigidbody>();
         _anim = GetComponent<Animator>();
         _aud = GetComponent<AudioSource>();
         _cam = GetComponentInChildren<Camera>().transform;
+        StartCoroutine(WaitDestroyMessage(3f, "Strange, the power went out... I should go down to the generator room"));
     }
     void FixedUpdate()
     {
@@ -108,9 +109,15 @@ public class Character : MonoBehaviour
     public void DisplayMessage(String message)
     {
         messageText.text = message;
-        if(messageCoroutine != null)
-            StopCoroutine(messageCoroutine);
-        messageCoroutine = StartCoroutine(Message(3f));
+        messageCanvas.SetActive(true);
+    }
+    
+    /// <summary>
+    /// Displays the canvas, the messageText will become message and will destroy message after time
+    /// </summary>
+    public void DisplayMessageTimed(String message, float time)
+    {
+        StartCoroutine(WaitDestroyMessage(time, message));
     }
 
     /// <summary>
@@ -118,8 +125,6 @@ public class Character : MonoBehaviour
     /// </summary>
     public void DestroyMessage()
     {
-        if(messageCoroutine != null)
-            StopCoroutine(messageCoroutine);
         messageCanvas.SetActive(false);
     }
 
@@ -136,21 +141,20 @@ public class Character : MonoBehaviour
         StartCoroutine(WaitDie(2f));
     }
     
-    /// <summary>
-    /// sets message canvas to true for 3 seconds
-    /// </summary>
-    /// <param name="s"></param>
-    /// <returns></returns>
-    private IEnumerator Message(float s)
-    {
-        messageCanvas.SetActive(true);
-        yield return new WaitForSeconds(s);
-        messageCanvas.SetActive(false);
-    }
     
     private IEnumerator WaitDie(float s)
     {
         yield return new WaitForSeconds(s);
         SceneLoader.I.LoadScene(1);
+    }
+    
+    private IEnumerator WaitDestroyMessage(float s, String text)
+    {
+        yield return new WaitForSeconds(1f);
+        messageText.text = text;
+        messageCanvas.SetActive(true);
+        yield return new WaitForSeconds(s);
+        if (messageText.text == text)
+            messageCanvas.SetActive(false);
     }
 }
