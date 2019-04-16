@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -22,8 +21,6 @@ public class Character : MonoBehaviour
     public AudioClip[] StepSounds;
     public Transform Camera;
 
-    public TextMeshProUGUI blah;
-
     private Coroutine messageCoroutine;
     private CharacterController _cont;
     private Rigidbody _rb;
@@ -34,7 +31,7 @@ public class Character : MonoBehaviour
 
     void Awake()
     {
-        I = this;     
+        I = this;
     }
     void Start()
     {
@@ -111,7 +108,9 @@ public class Character : MonoBehaviour
     public void DisplayMessage(String message)
     {
         messageText.text = message;
-        messageCanvas.SetActive(true);
+        if(messageCoroutine != null)
+            StopCoroutine(messageCoroutine);
+        messageCoroutine = StartCoroutine(Message(3f));
     }
 
     /// <summary>
@@ -119,6 +118,8 @@ public class Character : MonoBehaviour
     /// </summary>
     public void DestroyMessage()
     {
+        if(messageCoroutine != null)
+            StopCoroutine(messageCoroutine);
         messageCanvas.SetActive(false);
     }
 
@@ -135,6 +136,17 @@ public class Character : MonoBehaviour
         StartCoroutine(WaitDie(2f));
     }
     
+    /// <summary>
+    /// sets message canvas to true for 3 seconds
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
+    private IEnumerator Message(float s)
+    {
+        messageCanvas.SetActive(true);
+        yield return new WaitForSeconds(s);
+        messageCanvas.SetActive(false);
+    }
     
     private IEnumerator WaitDie(float s)
     {
