@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Key
+  - AI
+  - Door
+  - Light
+  - Battery
+  - Health
   layers:
   - Default
   - TransparentFX

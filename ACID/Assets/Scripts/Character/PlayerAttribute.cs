@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class PlayerAttribute : MonoBehaviour
 {
+    public static PlayerAttribute I;
+    
     public SceneLoader sceneLoader;
     public Animator flashAnim;
     public float MaxHealth = 100;
     public float CurrentHealth;
-    public static PlayerAttribute Instance;
+    public float MaxBattery = 100;
+    public float CurrentBattery;
+    public Slider HealthSlider;
+    public Slider BatterySlider;
     static float val;
     public int Ship;
 
     public bool hurtMe = false;
 
     // initiation of health
-    private void Start()
+    private void Awake()
     {
-        Instance = this;
+        I = this;
         CurrentHealth = MaxHealth;
     }
 
@@ -35,15 +41,22 @@ public class PlayerAttribute : MonoBehaviour
             takingDamage(10f);
             hurtMe = false;
         }
+
+        CurrentBattery -= Time.deltaTime;
+        
+        HealthSlider.value = CurrentHealth / MaxHealth;
+        BatterySlider.value = CurrentBattery / MaxBattery;
     }
 
-
-    //Pulls maxHealth from a static instance
-    public float getHealth()
+    public void RefillHealth()
     {
-        return CurrentHealth;
+        CurrentHealth = MaxHealth;
     }
 
+    public void RefillBattery()
+    {
+        CurrentBattery = MaxBattery;
+    }
 
     public void takingDamage(float damage)
     {
