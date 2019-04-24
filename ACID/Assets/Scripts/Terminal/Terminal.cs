@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Terminal : MonoBehaviour
 {
@@ -9,4 +10,5 @@ public class Terminal : MonoBehaviour
     public string RequiredInput;
     public string ErrorMessage;
     public string FinalOutput;
+    public UnityEvent method;
 }

@@ -111,6 +111,7 @@ public class Interact : MonoBehaviour
                     _targetDoor = null;
                     _char.DestroyMessage();
                 }
+                _targetDoor = null;
             }
             if (_target.tag.Equals("Terminal"))
             {
