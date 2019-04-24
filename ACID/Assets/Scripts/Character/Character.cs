@@ -40,7 +40,7 @@ public class Character : MonoBehaviour
         _anim = GetComponent<Animator>();
         _aud = GetComponent<AudioSource>();
         _cam = GetComponentInChildren<Camera>().transform;
-        StartCoroutine(WaitDestroyMessage(3f, "Strange, the power went out... I should go down to the generator room"));
+        StartCoroutine(WaitDestroyMessage(3f, "Strange, the lights went out... I should go down to main generator room"));
     }
     void FixedUpdate()
     {

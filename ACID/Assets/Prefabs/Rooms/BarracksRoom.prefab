@@ -1181,7 +1181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasAudioSource: 1
   isLocked: 1
-  characterNearby: 0
 --- !u!82 &1393416098399495204
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2244,9 +2243,9 @@ GameObject:
   - component: {fileID: 6392289231701822616}
   - component: {fileID: 6392289231702888356}
   - component: {fileID: 6392289231706999376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: console_screen
-  m_TagString: Untagged
+  m_TagString: Terminal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

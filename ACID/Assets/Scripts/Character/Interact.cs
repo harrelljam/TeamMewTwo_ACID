@@ -128,6 +128,8 @@ public class Interact : MonoBehaviour
                     _targetTerminal = null;
                     _char.DestroyMessage();
                 }
+
+                _targetTerminal = null;
             }
         }
         else if (_targetSpotted)
