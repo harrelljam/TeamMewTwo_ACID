@@ -59,7 +59,7 @@ public class FlickeringLghts : MonoBehaviour
 
         foreach (Light x in points)
         {
-                x.intensity = 0.3f;
+                x.intensity = 0.1f;
         }
     }
 }
