@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ScreenGui : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class ScreenGui : MonoBehaviour
     private string _errorMessage;
     private string _finalOutput;
     private bool _isOpen;
+    private UnityEvent _method;
 
     public void Show()
     {
@@ -40,6 +42,7 @@ public class ScreenGui : MonoBehaviour
         _requiredInput = terminal.RequiredInput;
         _errorMessage = terminal.ErrorMessage;
         _finalOutput = terminal.FinalOutput;
+        _method = terminal.Method;
         Show();
     }
 
@@ -55,6 +58,7 @@ public class ScreenGui : MonoBehaviour
                 {
                     Output.text = _finalOutput;
                     Error.text = "";
+                    _method.Invoke();
                 }
                 else
                 {

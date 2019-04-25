@@ -10,5 +10,5 @@ public class Terminal : MonoBehaviour
     public string RequiredInput;
     public string ErrorMessage;
     public string FinalOutput;
-    public UnityEvent method;
+    public UnityEvent Method;
 }

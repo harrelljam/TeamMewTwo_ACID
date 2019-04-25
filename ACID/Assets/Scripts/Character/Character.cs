@@ -23,6 +23,7 @@ public class Character : MonoBehaviour
     public Transform Camera;
     public GameObject Flightlight;
     public ScreenGui terminalGUI;
+    public GameObject LoseScreen;
     private Coroutine messageCoroutine;
     private CharacterController _cont;
     private Animator _anim;
@@ -144,6 +145,8 @@ public class Character : MonoBehaviour
     
     private IEnumerator WaitDie(float s)
     {
+        yield return new WaitForSeconds(s);
+        LoseScreen.SetActive(true);
         yield return new WaitForSeconds(s);
         SceneLoader.I.LoadScene(1);
     }
